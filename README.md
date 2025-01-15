@@ -1,3 +1,3 @@
 # docs
 
-- [Diaporama](https://riot-os.github.io/riot-course/slides/01-introduction)
+- [Diaporama](https://github.com/iese5-iot-2425-FTD-GNSS/docs/tree/main/slides/01-introduction)
