@@ -48,12 +48,16 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 fPort : 2 to 170
 
 uint8 : txpower (2,5,8,11,14) in dBm
+
 uint8 : datarate (0,1,2,3,4,5)
+
 int16 : temperature in 0.01 °C
+
 int24 : latitude
+
 int24 : longitude
+
 int16 : altitude
-faut expliquer
 
 # Métriques logicielles
 Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
