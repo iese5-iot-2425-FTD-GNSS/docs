@@ -18,7 +18,7 @@ Le module LoRaWAN est responsable de la communication sans fil, utilisant la ban
 Le microcontrôleur STM32, responsable de la gestion des opérations et de la coordination des modules, fonctionne de manière continue pendant le cycle de 2 minutes. Sa consommation est stable à **60 μA**, ce qui correspond à une consommation énergétique totale de **7200 μAs**.  
 
 ## 3. Module GPS
-Le module GPS, utilisé pour obtenir les coordonnées de localisation, est actif pendant 30 secondes par cycle. Il consomme **40 mA**, soit une énergie totale de **1200000 μAs**.  
+Le module GPS, utilisé pour obtenir les coordonnées de localisation, est actif pendant 30 secondes par cycle. Il consomme **40 mA**, soit une énergie totale de **1200 mAs**.  
 
 ## 4. Consommation Totale du Système
 En additionnant les contributions des trois modules, la consommation énergétique totale du système par cycle de 2 minutes s'élève à **1.208 As**. Avec une alimentation de **3.3V**, cela correspond à une puissance moyenne de **33.22 mW**.  
@@ -29,10 +29,6 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 - **Microcontrôleur STM32** : 0.60%  
 - **Module LoRaWAN** : 0.03%  
 
----
-
-## Conclusion
-Le bilan énergétique met en évidence que le module GPS est la principale source de consommation du système. Une optimisation de ce module, comme la réduction de la durée d'utilisation ou l'adoption d'une technologie moins gourmande en énergie, pourrait significativement améliorer l'efficacité énergétique globale.
 # Format de données (payload)
 # Métriques logicielles
 # Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
