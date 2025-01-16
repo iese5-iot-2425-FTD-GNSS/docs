@@ -47,9 +47,9 @@ IESE 5 Communication IoT
 <img src="images/linux.png" alt="Linux" width="70">
 <img src="images/riot.png" alt="RIOT" width="70">
 <img src="images/chirpstack.png" alt="ChirpStack" width="100">
-<img src="images/node-red.png" alt="Node-RED" width="90">
-<img src="images/grafana.png" alt="Grafana" width="80">
-<img src="images/influxdb.png" alt="InfluxDB" width="100">
+<img src="images/nodered.png" alt="Node-RED" width="90">
+<img src="images/grafana-logo.png" alt="Grafana" width="80">
+<img src="images/influxdb-logo.png" alt="InfluxDB" width="100">
 </center>
 ---
 
