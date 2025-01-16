@@ -99,4 +99,5 @@ Taille du firmware (.bin)
 
 ![Grafana 1](images/grafana1.png)
 ![Grafana 2](images/grafana2.png)
-## Problemes
+## Problemes rencontrés
+
