@@ -174,26 +174,27 @@ make DEVEUI=CAFEBABE904b4045 APPEUI=CAFEBABE00000000 APPKEY=dfd5bc2b62010cb633a1
   <p><em>Figure 3: Copie écran du Terminal</em></p>
 </div>
 
-Ensuite, nous avons créé un nouvel équipement depuis l'application et nous avons choisi WYRES_IESE5_G3 et le nom du device et WYRES_3_BALLON (Figure 4).
+Ensuite, nous avons créé un nouvel équipement depuis l'application (et générer les clés nécessaires) et nous avons choisi WYRES_IESE5_G3 et le nom du device et WYRES_3_BALLON (Figure 4).
 
 ![Figure 4: ChirpStack 1](images/chirpstack1.png)
 <p align="center"><em>Figure 4: Equipement de ChirpStack </em></p>
 
-Après, dans le device data, on peut voir les données reçues par le serveur (Figure 5).
+Après, dans la trame Lorawan, on peut voir que l'on reçoit des données (Figure 5).
 
-![Figure 5: ChirpStack 2](images/chirpstack2.png)
-<p align="center"><em>Figure 5: Device Data deChirpStack </em></p>
+![Figure 5: ChirpStack 4](images/chirpstack4.png)
+<p align="center"><em>Figure 5: ChirpStack 4</em></p>
 
-Si on clique dans une trame uplink, on peut visualiser toutes les informations LoRa mais aussi l'objectJSON qui est la partie où est stocké le payload avec en exemple la température qui est ici de 23 degrés au moment de la capture du capteur et de l'envoi en LoRa (Figure 6).
+Ensuite, dans le device data, on peut voir les données reçues par le serveur (Figure 6).
+
+![Figure 6: ChirpStack 2](images/chirpstack2.png)
+<p align="center"><em>Figure 6: Device Data deChirpStack </em></p>
+
+Si on clique dans une trame uplink, on peut visualiser toutes les informations LoRa mais aussi l'objectJSON qui est la partie où est stocké le payload avec en exemple la température qui est ici de 23 degrés au moment de la capture du capteur et de l'envoi en LoRa (Figure 7).
 
 <div align="center">
-  <img src="images/chirpstack3.png" alt="Figure 6: ChirpStack 3">
-  <p><em>Figure 6: ChirpStack 3</em></p>
+  <img src="images/chirpstack3.png" alt="Figure 7: ChirpStack 3">
+  <p><em>Figure 7: ChirpStack 3</em></p>
 </div>
-
-![Figure 7: ChirpStack 4](images/chirpstack4.png)
-<p align="center"><em>Figure 7: ChirpStack 4</em></p>
-
 
 docker-compose up -d
 docker-compose ps
