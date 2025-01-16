@@ -33,6 +33,6 @@ La sécurité et la confidentialité sont des aspects critiques dans les systèm
 ## 5. Politique de confidentialité
 - Les données collectées (GPS, temperature et pression) sont utilisées uniquement pour les besoins du projet et ne seront pas partagées avec des tiers. Les données peuvent être conservé pendant une période déterminée, puis supprimées de manière sécurisée une fois inutiles.
 
-## 7. Améliorations futures
+## 6. Améliorations futures
 - Intégration d'une authentification multi-facteurs (2FA) pour les plateformes utilisées.
 - Utilisation de techniques de chiffrement plus fort.
