@@ -26,6 +26,7 @@ Le système étudié transmet des données toutes les 2 minutes. Son bilan éner
 Le module LoRaWAN est responsable de la communication sans fil, utilisant la bande de fréquence de 868 MHz. Son fonctionnement est caractérisé par deux modes :  
 - **Mode actif** : pendant 1 seconde par cycle de 2 minutes, le module consomme **214 μA/MHz**, soit une consommation énergétique totale de **214 μAs** avec un frequence de communication LoraWan de 868 MHz.  
 - **Mode veille** : durant les 119 secondes restantes, la consommation chute à **0.9 μA**, correspondant à **107.1 μAs**.  
+
 Consommation totale pour le module LoRaWAN : **321.1 μAs** par cycle de 2 minutes.  
 
 ## 2. Microcontrôleur STM32
