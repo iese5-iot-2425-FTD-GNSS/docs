@@ -23,6 +23,15 @@ Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la 
 
 ![Cartes](images/equipement.jpg)
 
+## 1.STM32 Nucleo F446RE
+Le STM32 Nucleo F446RE est une carte de développement basée sur le STM32F446R, fournie par STMicroelectronics, spécialement conçue pour le développement de systèmes embarqués. Elle est équipée d'un processeur ARM Cortex-M4, offrant des performances efficaces et de nombreuses interfaces périphériques, permettant de se connecter facilement à divers capteurs et modules réseau. Elle est largement utilisée dans des projets IoT tels que la maison intelligente, la surveillance environnementale, etc. Son faible coût et sa facilité d'utilisation en font un choix idéal pour les étudiants et les ingénieurs souhaitant apprendre les systèmes embarqués et développer des prototypes rapidement.
+
+## 2.Module LoRa Wyres Base
+La carte Wyres Base est une carte électronique disposant d'un microcontroleur basse consommation d'énergie ST Microelectronic STM32L151CC, un composant de communication LoRa Semtech SX1272 et de plusieurs capteurs I2C comme l’altimètre et température que nous utilise dans notre projet. cette carte dispose également de plusieurs porte de communication. dans cette projet, nous utilison UART pour récupérer la donnees de la location
+
+## 3.Module GPS UART Grove SIM28
+Ce module est un gadget économique et programmable sur le terrain équipé d'un SIM28 et configuré pour la communication série. Il dispose de 22 canaux de suivi / 66 canaux d'acquisition pour la réception GPS. La sensibilité de suivi et d'acquisition atteint jusqu'à -160dBm, ce qui en fait un excellent choix pour les projets de navigation personnelle et les services de localisation, ainsi qu'un produit remarquable parmi ceux de la même gamme de prix.
+
 # Bilan énergétique
 Le système étudié transmet des données toutes les 2 minutes. Son bilan énergétique repose sur trois principaux composants : le module LoRaWAN, le microcontrôleur STM32 et le module GPS. Voici une analyse détaillée des sources de consommation énergétique de ces éléments :
 
