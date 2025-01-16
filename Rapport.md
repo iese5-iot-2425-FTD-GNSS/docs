@@ -99,8 +99,8 @@ Voici l'explication détaillée des différents éléments dans le payload :
   
 # Métriques logicielles
 
-Comme dit précédemment, nous avons repris le projet FTD de l'exemple riot-os. Nous avons ajouté des lignes pour SAUL et LPP Cayenne. 
-Nombre de lignes de code ajoutées-modifiées : 60 lignes environ.
+- Comme dit précédemment, nous avons repris le projet FTD de l'exemple riot-os. Nous avons ajouté des lignes pour SAUL et LPP Cayenne. 
+Nombre de lignes de code ajoutées-modifiées : 60 lignes environ. La partie SAUL est utilisée pour la collecte de données et LPP pour la communication.
 
 Voici le code ajouté dans le main.c :
 ```c
@@ -157,7 +157,7 @@ while (1) {
       xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
 }
 ```
-- Taille du firmware (.bin)
+- La Taille du firmware (.bin) est de 2,87 MB (3 014 782 bytes).
 
 # Travail Réalisé
 ![Terminal](images/Terminal.png)
