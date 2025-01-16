@@ -229,12 +229,12 @@ Ensuite, nous zoomons sur une trame, on peut voir l'objet avec le contenu que le
   <p><em>Figure 11: Contenu trame Node-RED 4</em></p>
 </div>
 
-La base de données locale "lorawan" créer dans NoteRED peut être afficher avec des commandes SQL avec les données des capteur et les données radio par exemple. De plus, le dataset complet peut être extrait, il se situe dans le dépôt "dataset" et les fichiers pour le backend avec NoteRED, InfluxDB et Grafana dans "backend" (Figure 12).
+La base de données locale "lorawan" créer dans NodeRED peut être afficher avec des commandes SQL avec les données des capteur et les données radio par exemple. De plus, le dataset complet peut être extrait, il se situe dans le dépôt "dataset" et les fichiers pour le backend avec NodeRED, InfluxDB et Grafana dans "backend" (Figure 12).
 
 ![Figure 12: InfluxDB](images/influxdb.png)
 <p align="center"><em>Figure 12: InfluxDB</em></p>
 
-Pour finir, les données sont visualisées sur Grafana qui utilise les données de InfluxDB. On a les coordonnées GPS qui pointent à Polytech, les valeurs de température et de pression avec des graphiques qui montrent les évolutions dans le temps. Et aussi, d'autre mesure liés a l'antenne.
+Pour finir, les données sont visualisées sur Grafana qui utilise les données de InfluxDB. On a les coordonnées GPS qui pointent à Polytech, les valeurs de température et de pression avec des graphiques qui montrent les évolutions dans le temps. Et aussi, d'autre mesure liés a l'antenne (Figure 13).
 
 ![Figure 13: Grafana 1](images/grafana1.png)
 ![Figure 13: Grafana 2](images/grafana2.png)
@@ -242,8 +242,10 @@ Pour finir, les données sont visualisées sur Grafana qui utilise les données 
 
 ## Problemes rencontrés
 
-- Flash carte wyres, debrancher la carte puis rebrencher
-- probleme avec le module gnss qui fonctionne pas donc il a fallu sonder au +3.3v a la main.
+Lors de ce mini-projet, nous avons eu beacoup de problèmes. Les plus important ont été les suivants : 
+
+- Le Flash de la carte wyres, il fallait debrancher la carte, puis la rebrencher pour pouvoir lire la console UART.
+- Le probleme avec le module GNSS qui n'était pas allumé et donc ne fonctionnait pas. Il a fallu sonder au la pin +3.3V du connectur est la branché à la STM32.
 - Communication UART du GNSS qui fonctionne pas quand GPS = 1 dans le Makefile donc utilisation de fake donnée de GPS pour le test.
 - nodered_1  	| 16 Jan 09:58:58 - [info] [mqtt-broker:LNS] Connection failed to broker: mqtts://lns.campusiot.imag.fr:8883
 
