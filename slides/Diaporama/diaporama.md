@@ -5,7 +5,7 @@ class: center, middle
 <br>
 <br>
 .center[
-<img src="images/riot-round-logo.png" alt="" style="width:220px;"/>
+<img src="images/polytech.png" alt="" style="width:220px;"/>
 ]
 
 ---
