@@ -172,8 +172,10 @@ while (1) {
 ![Figure 5: ChirpStack 2](images/chirpstack2.png)
 <p align="center"><em>Figure 5: ChirpStack 2</em></p>
 
-![Figure 6: ChirpStack 3](images/chirpstack3.png)
-<p align="center"><em>Figure 6: ChirpStack 3</em></p>
+<div align="center">
+  <img src="images/chirpstack3.png" alt="Figure 6: ChirpStack 3">
+  <p><em>Figure 6: ChirpStack 3</em></p>
+</div>
 
 ![Figure 7: ChirpStack 4](images/chirpstack4.png)
 <p align="center"><em>Figure 7: ChirpStack 4</em></p>
@@ -184,11 +186,15 @@ while (1) {
 ![Figure 9: Node-RED 2](images/nodered2.png)
 <p align="center"><em>Figure 9: Node-RED 2</em></p>
 
-![Figure 10: Node-RED 3](images/nodered3.png)
-<p align="center"><em>Figure 10: Node-RED 3</em></p>
+<div align="center">
+  <img src="images/nodered3.png" alt="Figure 10: Node-RED 3">
+  <p><em>Figure 10: Node-RED 3</em></p>
+</div>
 
-![Figure 11: Node-RED 4](images/nodered4.png)
-<p align="center"><em>Figure 11: Node-RED 4</em></p>
+<div align="center">
+  <img src="images/nodered4.png" alt="Figure 11: Node-RED 4">
+  <p><em>Figure 11: Node-RED 4</em></p>
+</div>
 
 ![Figure 12: Grafana 1](images/grafana1.png)
 ![Figure 12: Grafana 2](images/grafana2.png)
