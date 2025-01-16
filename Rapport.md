@@ -99,8 +99,10 @@ Voici l'explication détaillée des différents éléments dans le payload :
   
 # Métriques logicielles
 
-- Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
+Comme dit précédemment, nous avons repris le projet FTD de l'exemple riot-os. Nous avons ajouté des lignes pour SAUL et LPP Cayenne. 
+Nombre de lignes de code ajoutées-modifiées : 60 lignes environ.
 
+Voici le code ajouté dans le main.c :
 ```c
 #include <stdio.h>
 #include "flash_utils.h"
