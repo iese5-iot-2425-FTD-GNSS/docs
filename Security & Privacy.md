@@ -1,7 +1,9 @@
 # Security & Privacy
 
+Le document "Security & Privacy" décrit des mesures qui peuvent être mises en place pour garantir la protection des données et sécuriser les communications dans ce mini-projet IoT FTD GNSS.
+
 ## 1. Introduction
-La sécurité et la confidentialité sont des aspects critiques dans les systèmes IoT, en raison de la collecte, de la transmission et de l'analyse de données sensibles. Ce document décrit les mesures mises en place pour garantir la protection des données et sécuriser les communications dans ce mini-projet IoT.
+La sécurité et la confidentialité sont des aspects critiques dans les systèmes IoT. En effet, la collecte de données et leur transmission sont des phases sensibles.
 
 ## 2. Sécurité des données
 
