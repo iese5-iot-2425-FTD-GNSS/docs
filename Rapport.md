@@ -102,7 +102,17 @@ Voici l'explication détaillée des différents éléments dans le payload :
 - Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
 
 ```c
-//#if SAUL_GNSS == 1
+#include <stdio.h>
+#include "flash_utils.h"
+#include "phydat.h"
+#include "saul_reg.h"
+#include "xtimer.h"
+
+#include "cayenne_lpp.h"
+#include <stdbool.h>
+#include <string.h>
+
+#define INTERVAL            (1LU * US_PER_SEC)
 static cayenne_lpp_t lpp;
 
 static void _print_buffer(const uint8_t *buffer, size_t len, const char *msg)
@@ -113,10 +123,38 @@ static void _print_buffer(const uint8_t *buffer, size_t len, const char *msg)
         printf("%02X", buffer[i]);
     }
 }
-//#endif
-```
 
-  
+phydat_t res;
+xtimer_ticks32_t last_wakeup = xtimer_now();
+puts("Projet SAUL : Récupération Température et Pression de la carte Lora STM32L151\n");
+int temperature=0;
+int pression=0;
+while (1) {
+    saul_reg_t *dev = saul_reg;
+    if (dev == NULL) {
+       puts("Erreur : Aucun périphérique SAUL détecté");
+       return 1;
+    }
+    while (dev) {
+       saul_reg_read(dev, &res);
+          if (dev->driver->type == SAUL_SENSE_TEMP) {
+              temperature = res.val[0];
+              printf("Température : %hd °C\n", temperature/100);
+          } 
+          else if (dev->driver->type == SAUL_SENSE_PRESS) {
+              pression = res.val[0];
+              printf("Pression : %hd hPa\n", pression);
+         }
+         dev = dev->next;
+   }
+      cayenne_lpp_reset(&lpp);
+      cayenne_lpp_add_temperature(&lpp, 1, temperature);
+      cayenne_lpp_add_barometric_pressure(&lpp, 2, pression);
+      _print_buffer(lpp.buffer, lpp.cursor, "\nLPP: ");
+      puts("\n##########################");        
+      xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
+}
+```
 - Taille du firmware (.bin)
 
 # Travail Réalisé
