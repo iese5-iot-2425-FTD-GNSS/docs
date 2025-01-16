@@ -160,17 +160,42 @@ while (1) {
 - La Taille du firmware (.bin) est de 2,87 MB (3 014 782 bytes).
 
 # Travail Réalisé
-![Terminal](images/Terminal.png)
+![Figure 3: Terminal](images/Terminal.png)
+<p align="center"><em>Figure 3: Copie écran du Terminal</em></p>
 
-![ChirpStack 1](images/chirpstack1.png)
-![ChirpStack 2](images/chirpstack2.png)
-![ChirpStack 3](images/chirpstack3.png)
-![ChirpStack 4](images/chirpstack4.png)
+![Figure 4: ChirpStack 1](images/chirpstack1.png)
+<p align="center"><em>Figure 4: ChirpStack 1</em></p>
 
-![Node-RED](images/nodered.png)
+![Figure 5: ChirpStack 2](images/chirpstack2.png)
+<p align="center"><em>Figure 5: ChirpStack 2</em></p>
 
-![Grafana 1](images/grafana1.png)
-![Grafana 2](images/grafana2.png)
+![Figure 6: ChirpStack 3](images/chirpstack3.png)
+<p align="center"><em>Figure 6: ChirpStack 3</em></p>
+
+![Figure 7: ChirpStack 4](images/chirpstack4.png)
+<p align="center"><em>Figure 7: ChirpStack 4</em></p>
+
+![Figure 8: Node-RED 1](images/nodered1.png)
+<p align="center"><em>Figure 8: Node-RED 1</em></p>
+
+![Figure 9: Node-RED 2](images/nodered2.png)
+<p align="center"><em>Figure 9: Node-RED 2</em></p>
+
+![Figure 10: Node-RED 3](images/nodered3.png)
+<p align="center"><em>Figure 10: Node-RED 3</em></p>
+
+![Figure 11: Node-RED 4](images/nodered4.png)
+<p align="center"><em>Figure 11: Node-RED 4</em></p>
+
+![Figure 12: Grafana 1](images/grafana1.png)
+<p align="center"><em>Figure 12: Grafana 1</em></p>
+
+![Figure 13: Grafana 2](images/grafana2.png)
+<p align="center"><em>Figure 13: Grafana 2</em></p>
+
+![Figure 14: InfluxDB](images/influxdb.png)
+<p align="center"><em>Figure 14: InfluxDB</em></p>
+
 ## Problemes rencontrés
 
 # Conclusion
