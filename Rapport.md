@@ -26,16 +26,17 @@ Le marché des solutions IoT dédiées à la collecte, la transmission et l’an
 3. **Semtech**  
    Développe des modules LoRa et des solutions réseaux complèt pour la transmission longue distance des données des capteurs, particulièrement adaptés aux environnements IoT nécessitant une faible consommation énergétique.  
 
-## Différenciation de ce projet  
-Ce projet se distingue par l’utilisation de technologies accessibles, comme le capteur ST LPS22HB et le module de position Grove SIM28, offrant une solution économique et efficace pour mesurer plusieurs paramètres (température, pression et position géographique). En couvrant l’ensemble du processus IoT, de l’acquisition des données à leur visualisation via des outils tels que Grafana, il propose une chaîne IoT complète qui dépasse les produits se limitant à la collecte ou à la transmission des données. De plus, l’adoption de standards ouverts, notamment les protocoles MQTT et les outils comme NodeRED, garantit une grande flexibilité et une interopérabilité avec d’autres systèmes, renforçant ainsi son potentiel d’intégration et d’adaptabilité.
+## Contenu du projet
+Ce mini-projet se distingue par l’utilisation de technologies accessibles, comme le capteur ST LPS22HB et le module de position Grove SIM28, offrant une solution économique et efficace pour mesurer plusieurs paramètres (température, pression et position géographique). En couvrant l’ensemble du processus IoT, de l’acquisition des données à leur visualisation via des outils tels que Grafana, il propose une chaîne IoT complète qui dépasse les produits se limitant à la collecte ou à la transmission des données. De plus, l’adoption de standards ouverts, notamment les protocoles MQTT et les outils comme NodeRED, garantit une grande flexibilité et une interopérabilité avec d’autres systèmes, renforçant ainsi son potentiel d’intégration et d’adaptabilité.
 
 ## Potentiel du projet face à la concurrence  
-Ce projet se positionne comme une solution pédagogique et modulaire, offrant une base idéale pour des applications IoT personnalisées et évolutives. Il se distingue par son orientation vers l’intégration de bout en bout, sa simplicité de mise en œuvre et son coût réduit, le rendant accessible à des contextes éducatifs ou à des petites entreprises cherchant à tester ou déployer des systèmes IoT à faible échelle.
+Ce mini-projet se positionne comme une solution pédagogique et modulaire, offrant une base idéale pour des applications IoT personnalisées et évolutives. Il se distingue par son orientation vers l’intégration de bout en bout avec le No code, sa simplicité de mise en œuvre et son coût réduit (2 carte et 1 capteur), le rendant accessible à des contextes éducatifs ou à des petites entreprises cherchant à tester ou déployer des systèmes IoT à faible échelle.
 
 # Equipements
-Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB), et le module GPS UART Grove SIM28.
+Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB) et le module GPS UART Grove SIM28 (Figure 2).
 
-![Cartes](images/cartes.jpg)
+![Figure 2: Cartes](images/schema.png)
+<p align="center"><em>Figure 2: Cartes</em></p>
 
 ## 1.STM32 Nucleo F446RE
 Le STM32 Nucleo F446RE (au centre de l'image) est une carte de développement basée sur le STM32F446R, fournie par STMicroelectronics, spécialement conçue pour le développement de systèmes embarqués. Elle est équipée d'un processeur ARM Cortex-M4, offrant des performances efficaces et de nombreuses interfaces périphériques, permettant de se connecter facilement à divers capteurs et modules réseau. Elle est largement utilisée dans des projets IoT tels que la maison intelligente, la surveillance environnementale, etc. Son faible coût et sa facilité d'utilisation en font un choix idéal pour les étudiants et les ingénieurs souhaitant apprendre les systèmes embarqués et développer des prototypes rapidement.
