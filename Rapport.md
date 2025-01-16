@@ -32,7 +32,7 @@ Ce projet se positionne comme une solution pédagogique et modulaire, offrant un
 # Equipements
 Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB), et le module GPS UART Grove SIM28.
 
-![Cartes](images/equipement.jpg)
+![Cartes](images/cartes.jpg)
 
 ## 1.STM32 Nucleo F446RE
 Le STM32 Nucleo F446RE (au centre de l'image) est une carte de développement basée sur le STM32F446R, fournie par STMicroelectronics, spécialement conçue pour le développement de systèmes embarqués. Elle est équipée d'un processeur ARM Cortex-M4, offrant des performances efficaces et de nombreuses interfaces périphériques, permettant de se connecter facilement à divers capteurs et modules réseau. Elle est largement utilisée dans des projets IoT tels que la maison intelligente, la surveillance environnementale, etc. Son faible coût et sa facilité d'utilisation en font un choix idéal pour les étudiants et les ingénieurs souhaitant apprendre les systèmes embarqués et développer des prototypes rapidement.
