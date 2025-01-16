@@ -161,13 +161,14 @@ while (1) {
 
 # Travail Réalisé
 
-Le travail réalisé pour ce mini-projet a d'abord été de récolté les informations du capteur avec SAUL et la communication LPP (Figure 3).
+Le travail réalisé pour ce mini-projet a d'abord été de récolter les informations du capteur avec SAUL et la communication LPP (Figure 3).
 
 Les lignes de commande pour make avec les identifiants de communication pour le serveur Chirpstack :
+```shell
 export BOARD=wyres-base
 export EXTERNAL_BOARD_DIRS=~/github/campusiot/RIOT-wyres/boards
 make DEVEUI=CAFEBABE904b4045 APPEUI=CAFEBABE00000000 APPKEY=dfd5bc2b62010cb633a1ac07c9bba829 OPERATOR=CampusIoT TXPERIOD=60 flash
-
+```
 <div align="center">
   <img src="images/Terminal.png" alt="Figure 3: Terminal">
   <p><em>Figure 3: Copie écran du Terminal</em></p>
