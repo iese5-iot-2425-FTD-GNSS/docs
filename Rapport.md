@@ -1,7 +1,9 @@
 # Introduction
-Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. À partir des travaux pratiques déjà réalisés, nous allons améliorer les codes existants en utilisant SAUL ([S]ensor [A]ctuator [U]ber [L]ayer) pour la collecte des mesures des capteurs. Nous utiliserons un capteur intégré ST LPS22HB (qui est intégré dans la carte LoRa) pour mesurer la température et la pression atmosphérique, ainsi qu’un module de position Grove SIM28 pour obtenir la longitude, la latitude et l’altitude.
+Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. De plus, pour ce mini-projet, le développement No code sera la méthode utilise, cette méthode est une approche du développement de logiciels permettant de créer et de déployer des logiciels sans écrire de code informatique, grâce à l'utilisation de plateformes de développement No Code que l'on va expliqué plus tard.
 
-Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT (Chirpstack) sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données avec InfluDB. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées. Voir schéma ci-dessous.
+À partir des travaux pratiques déjà réalisés, nous allons améliorer les codes existants en utilisant SAUL ([S]ensor [A]ctuator [U]ber [L]ayer) pour la collecte des mesures des capteurs. Nous utiliserons un capteur intégré ST LPS22HB (qui est intégré dans la carte LoRa) pour mesurer la température et la pression atmosphérique, ainsi qu’un module de position Grove SIM28 pour obtenir la longitude, la latitude et l’altitude.
+
+Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT (Chirpstack) sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données avec InfluDB. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées. Voir schéma figure 1 ci-dessous.
 
 ![Figure 1: Schéma explicatif](images/schema.png)
 <p align="center"><em>Figure 1: Schéma explicatif</em></p>
@@ -12,7 +14,6 @@ Ce projet joue un rôle clé dans la **recherche atmosphérique et environnement
 Dans le domaine de la **surveillance des catastrophes**, ce projet offre également un fort potentiel. En collectant et en analysant en temps réel les variations des conditions atmosphériques, il est possible de détecter les signes précurseurs de phénomènes météorologiques extrêmes tels que les cyclones et les pluies torrentielles. Ce système pourrait être utilisé comme station météorologique portable dans des zones montagneuses ou isolées, comblant ainsi les lacunes des stations traditionnelles et améliorant la couverture et la réactivité des systèmes de surveillance.
 
 # Concurrence marché
-
 Le marché des solutions IoT dédiées à la collecte, la transmission et l’analyse des données environnementales est en pleine croissance, avec de nombreux acteurs proposant des technologies similaires à celles utilisées dans ce projet.
 
 ## Acteurs majeurs  
