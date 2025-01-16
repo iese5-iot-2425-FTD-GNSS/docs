@@ -1,7 +1,7 @@
 class: center, middle
 
 # Introduction
-# test
+test image
 <br>
 <br>
 .center[
