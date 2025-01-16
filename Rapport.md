@@ -161,9 +161,6 @@ while (1) {
 
 # Travail Réalisé
 
-![Figure 3: Terminal](images/Terminal.png)
-<p align="center"><em>Figure 3: Copie écran du Terminal</em></p>
-
 <div align="center">
   <img src="images/Terminal.png" alt="Figure 3: Terminal">
   <p><em>Figure 3: Copie écran du Terminal</em></p>
