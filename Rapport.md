@@ -1,7 +1,7 @@
 # Introduction
 Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. À partir des travaux pratiques déjà réalisés, nous allons améliorer les codes existants en utilisant SAUL ([S]ensor [A]ctuator [U]ber [L]ayer) pour la collecte des mesures des capteurs. Nous utiliserons un capteur intégré ST LPS22HB (qui est intégré dans la carte LoRa) pour mesurer la température et la pression atmosphérique, ainsi qu’un module de position Grove SIM28 pour obtenir la longitude, la latitude et l’altitude.
 
-Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données avec InfluDB. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées. Voir schéma ci-dessous.
+Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT (Chirpstack) sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données avec InfluDB. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées. Voir schéma ci-dessous.
 
 ![Schéma](images/schema.png)
 
