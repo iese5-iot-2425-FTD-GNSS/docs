@@ -19,6 +19,8 @@ Des entreprises comme qui SENSIT propose des solutions IoT pour la collecte de d
 Et Bosch sont également des acteurs majeurs dans le domaine des capteurs IoT, avec une gamme d’appareils utilisés pour surveiller les conditions environnementales, y compris dans des applications liées à la météorologie.
 
 # Equipements
+![Cartes](images/equipement.jpg)
+
 # Bilan énergétique
 Le système étudié transmet des données toutes les 2 minutes. Son bilan énergétique repose sur trois principaux composants : le module LoRaWAN, le microcontrôleur STM32 et le module GPS. Voici une analyse détaillée des sources de consommation énergétique de ces éléments :
 
