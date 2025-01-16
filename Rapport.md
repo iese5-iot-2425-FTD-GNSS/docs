@@ -72,13 +72,21 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 fPort : 2 to 170
 
 int16 : altitude
+
 uint8 : datarate (0,1,2,3,4,5)
+
 float64 : gain
+
 float64 : latitude
+
 float64 : longitude
+
 int16 : pressure
+
 int16 : size
+
 int16 : temperature
+
 uint8 : txpower en dBm
 
 # Métriques logicielles
