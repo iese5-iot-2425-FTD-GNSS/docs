@@ -161,16 +161,29 @@ while (1) {
 
 # Travail Réalisé
 
+Le travail réalisé pour ce mini-projet a d'abord été de récolté les informations du capteur avec SAUL et la communication LPP (Figure 3).
+
+Les lignes de commande pour make avec les identifiants de communication pour le serveur Chirpstack :
+export BOARD=wyres-base
+export EXTERNAL_BOARD_DIRS=~/github/campusiot/RIOT-wyres/boards
+make DEVEUI=CAFEBABE904b4045 APPEUI=CAFEBABE00000000 APPKEY=dfd5bc2b62010cb633a1ac07c9bba829 OPERATOR=CampusIoT TXPERIOD=60 flash
+
 <div align="center">
   <img src="images/Terminal.png" alt="Figure 3: Terminal">
   <p><em>Figure 3: Copie écran du Terminal</em></p>
 </div>
 
+Ensuite, nous avons créé un nouvel équipement depuis l'application et nous avons choisi WYRES_IESE5_G3 et le nom du device et WYRES_3_BALLON (Figure 4).
+
 ![Figure 4: ChirpStack 1](images/chirpstack1.png)
-<p align="center"><em>Figure 4: ChirpStack 1</em></p>
+<p align="center"><em>Figure 4: Equipement de ChirpStack </em></p>
+
+Après, dans le device data, on peut voir les données reçues par le serveur (Figure 5).
 
 ![Figure 5: ChirpStack 2](images/chirpstack2.png)
-<p align="center"><em>Figure 5: ChirpStack 2</em></p>
+<p align="center"><em>Figure 5: Device Data deChirpStack </em></p>
+
+Si on clique dans une trame uplink, on peut visualiser toutes les informations LoRa mais aussi l'objectJSON qui est la partie où est stocké le payload avec en exemple la température qui est ici de 23 degrés au moment de la capture du capteur et de l'envoi en LoRa (Figure 6).
 
 <div align="center">
   <img src="images/chirpstack3.png" alt="Figure 6: ChirpStack 3">
@@ -179,6 +192,13 @@ while (1) {
 
 ![Figure 7: ChirpStack 4](images/chirpstack4.png)
 <p align="center"><em>Figure 7: ChirpStack 4</em></p>
+
+
+docker-compose up -d
+docker-compose ps
+docker-compose logs -f
+docker-compose restart 	si fonctionne pas
+
 
 ![Figure 8: Node-RED 1](images/nodered1.png)
 <p align="center"><em>Figure 8: Node-RED 1</em></p>
@@ -205,6 +225,9 @@ while (1) {
 
 ## Problemes rencontrés
 
+- Flash carte wyres, debrancher la carte puis rebrencher
+- probleme avec le module gnss qui fonctionne pas donc il a fallu sonder au +3.3v a la main.
+- Communication UART du GNSS qui fonctionne pas quand GPS = 1 dans le Makefile donc utilisation de fake donnée de GPS pour le test.
+- nodered_1  	| 16 Jan 09:58:58 - [info] [mqtt-broker:LNS] Connection failed to broker: mqtts://lns.campusiot.imag.fr:8883
+
 # Conclusion
-
-
