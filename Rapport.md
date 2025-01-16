@@ -71,17 +71,15 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 # Format de données (payload)
 fPort : 2 to 170
 
-uint8 : txpower (2,5,8,11,14) in dBm
-
-uint8 : datarate (0,1,2,3,4,5)
-
-int16 : temperature in 0.01 °C
-
-int24 : latitude
-
-int24 : longitude
-
 int16 : altitude
+uint8 : datarate (0,1,2,3,4,5)
+float64 : gain
+float64 : latitude
+float64 : longitude
+int16 : pressure
+int16 : size
+int16 : temperature
+uint8 : txpower en dBm
 
 # Métriques logicielles
 Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
