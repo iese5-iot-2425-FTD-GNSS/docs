@@ -35,7 +35,7 @@ Ce mini-projet se positionne comme une solution pédagogique et modulaire, offra
 # Equipements
 Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB) et le module GPS UART Grove SIM28 (Figure 2).
 
-![Figure 2: Cartes](images/schema.png)
+![Figure 2: Cartes](images/cartes.png)
 <p align="center"><em>Figure 2: Cartes</em></p>
 
 ## 1.STM32 Nucleo F446RE
