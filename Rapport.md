@@ -164,6 +164,11 @@ while (1) {
 ![Figure 3: Terminal](images/Terminal.png)
 <p align="center"><em>Figure 3: Copie écran du Terminal</em></p>
 
+<div align="center">
+  <img src="images/Terminal.png" alt="Figure 3: Terminal">
+  <p><em>Figure 3: Copie écran du Terminal</em></p>
+</div>
+
 ![Figure 4: ChirpStack 1](images/chirpstack1.png)
 <p align="center"><em>Figure 4: ChirpStack 1</em></p>
 
