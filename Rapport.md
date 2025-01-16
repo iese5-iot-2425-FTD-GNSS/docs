@@ -251,4 +251,4 @@ Lors de ce mini-projet, nous avons eu beacoup de problèmes. Les plus important 
 
 # Conclusion
 
-Lors de ce mini-projet, nous avons pu, travailler sur une application IoT réelle.
+Lors de ce mini-projet, nous avons pu, travailler sur une application IoT réelle. Nous avons pu nous sensibiliser aux technologies IoT de bout en bout avec le serveur LoRaWAN open-source ChirpStack, les conteneurs docker pour le backend avec NodeRED, InfluxDB et Grafana et l'applicaiton FTD GNSS même si elle n'est pas finie. De plus, nous avons pu comprendre les applications de l’IoT, les technologies radio LPWAN et maitriser le prototypage rapide d’applications end-to-end IoT.
