@@ -98,8 +98,26 @@ Voici l'explication détaillée des différents éléments dans le payload :
 - txpower représente la puissance de transmission du signal.
   
 # Métriques logicielles
-Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
-Taille du firmware (.bin)
+
+- Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
+
+```c
+//#if SAUL_GNSS == 1
+static cayenne_lpp_t lpp;
+
+static void _print_buffer(const uint8_t *buffer, size_t len, const char *msg)
+{
+    printf("%s: ", msg);
+    for (uint8_t i = 0; i < len; i++)
+    {
+        printf("%02X", buffer[i]);
+    }
+}
+//#endif
+```
+
+  
+- Taille du firmware (.bin)
 
 # Travail Réalisé
 ![Terminal](images/Terminal.png)
