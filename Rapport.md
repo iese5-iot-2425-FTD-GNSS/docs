@@ -1,5 +1,5 @@
 # Introduction
-Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. De plus, pour ce mini-projet, le développement No code sera la méthode utilise, cette méthode est une approche du développement de logiciels permettant de créer et de déployer des logiciels sans écrire de code informatique, grâce à l'utilisation de plateformes de développement No Code que l'on va expliqué plus tard.
+Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. De plus, pour ce mini-projet, le développement No code sera la méthode utilise, cette méthode est une approche du développement de logiciels permettant de créer et de déployer des logiciels sans écrire de code informatique, grâce à l'utilisation de plateformes de développement No Code que l'on va expliquer plus tard.
 
 À partir des travaux pratiques déjà réalisés, nous allons améliorer les codes existants en utilisant SAUL ([S]ensor [A]ctuator [U]ber [L]ayer) pour la collecte des mesures des capteurs. Nous utiliserons un capteur intégré ST LPS22HB (qui est intégré dans la carte LoRa) pour mesurer la température et la pression atmosphérique, ainsi qu’un module de position Grove SIM28 pour obtenir la longitude, la latitude et l’altitude.
 
@@ -24,14 +24,13 @@ Le marché des solutions IoT dédiées à la collecte, la transmission et l’an
    Fournit des solutions intégrées avec des capteurs connectés pour mesurer et analyser en temps réel des paramètres environnementaux tels que la température et l’humidité, souvent utilisées dans des systèmes de grande échelle.  
 
 3. **Semtech**  
-   Développe des modules LoRa et des solutions réseau complètes pour la transmission longue distance des données des capteurs, particulièrement adaptés aux environnements IoT nécessitant une faible consommation énergétique.  
+   Développe des modules LoRa et des solutions réseaux complèt pour la transmission longue distance des données des capteurs, particulièrement adaptés aux environnements IoT nécessitant une faible consommation énergétique.  
 
 ## Différenciation de ce projet  
-Ce projet se distingue par l’utilisation de technologies accessibles, comme le capteur ST LPS22HB et le module de position Grove SIM28, offrant une solution économique et efficace pour mesurer plusieurs paramètres (température, pression et position géographique). En couvrant l’ensemble du processus IoT, de l’acquisition des données à leur visualisation via des outils tels que Grafana, il propose une chaîne IoT complète qui dépasse les produits se limitant à la collecte ou à la transmission des données. De plus, l’adoption de standards ouverts, notamment les protocoles MQTT et les outils comme NodeRed, garantit une grande flexibilité et une interopérabilité avec d’autres systèmes, renforçant ainsi son potentiel d’intégration et d’adaptabilité.
+Ce projet se distingue par l’utilisation de technologies accessibles, comme le capteur ST LPS22HB et le module de position Grove SIM28, offrant une solution économique et efficace pour mesurer plusieurs paramètres (température, pression et position géographique). En couvrant l’ensemble du processus IoT, de l’acquisition des données à leur visualisation via des outils tels que Grafana, il propose une chaîne IoT complète qui dépasse les produits se limitant à la collecte ou à la transmission des données. De plus, l’adoption de standards ouverts, notamment les protocoles MQTT et les outils comme NodeRED, garantit une grande flexibilité et une interopérabilité avec d’autres systèmes, renforçant ainsi son potentiel d’intégration et d’adaptabilité.
 
 ## Potentiel du projet face à la concurrence  
 Ce projet se positionne comme une solution pédagogique et modulaire, offrant une base idéale pour des applications IoT personnalisées et évolutives. Il se distingue par son orientation vers l’intégration de bout en bout, sa simplicité de mise en œuvre et son coût réduit, le rendant accessible à des contextes éducatifs ou à des petites entreprises cherchant à tester ou déployer des systèmes IoT à faible échelle.
-
 
 # Equipements
 Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB), et le module GPS UART Grove SIM28.
