@@ -44,7 +44,7 @@ IESE 5 Communication IoT
 
 ### Logos des technologies utilisées :
 <center>
-<img src="images/linux.png" alt="Linux" width="70">
+<img src="images/linux.jpg" alt="Linux" width="70">
 <img src="images/riot.png" alt="RIOT" width="70">
 <img src="images/chirpstack.png" alt="ChirpStack" width="100">
 <img src="images/nodered.png" alt="Node-RED" width="90">
