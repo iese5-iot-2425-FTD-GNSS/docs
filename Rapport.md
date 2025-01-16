@@ -250,3 +250,5 @@ Lors de ce mini-projet, nous avons eu beacoup de problèmes. Les plus important 
 - Problème de broker MQTT : nodered_1  	| 16 Jan 09:58:58 - [info] [mqtt-broker:LNS] Connection failed to broker: mqtts://lns.campusiot.imag.fr:8883
 
 # Conclusion
+
+Lors de ce mini-projet, nous avons pu, travailler sur une application IoT réelle.
