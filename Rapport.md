@@ -76,25 +76,18 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 
 Un format de données (payload) décrit une structure d'information utilisée pour transmettre des données dans un système de communication.
 
+```c
 fPort : 2 to 170 
-
 int16 : altitude
-
 float64 : latitude
-
 float64 : longitude
-
 int16 : temperature
-
 int16 : pressure
-
 uint8 : datarate (0,1,2,3,4,5)
-
 float64 : gain
-
 int16 : size
-
 uint8 : txpower en dBm
+```
 
 Voici l'explication détaillée des différents éléments dans le payload :
 
