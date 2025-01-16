@@ -244,9 +244,9 @@ Pour finir, les données sont visualisées sur Grafana qui utilise les données 
 
 Lors de ce mini-projet, nous avons eu beacoup de problèmes. Les plus important ont été les suivants : 
 
-- Le Flash de la carte wyres, il fallait debrancher la carte, puis la rebrencher pour pouvoir lire la console UART.
-- Le probleme avec le module GNSS qui n'était pas allumé et donc ne fonctionnait pas. Il a fallu sonder au la pin +3.3V du connectur est la branché à la STM32.
-- Communication UART du GNSS qui fonctionne pas quand GPS = 1 dans le Makefile donc utilisation de fake donnée de GPS pour le test.
-- nodered_1  	| 16 Jan 09:58:58 - [info] [mqtt-broker:LNS] Connection failed to broker: mqtts://lns.campusiot.imag.fr:8883
+- Le Flash de la carte wyres, il fallait débrancher la carte, puis la rebrancher pour pouvoir lire la console UART.
+- Le problème avec le module GNSS qui n'était pas allumé et donc ne fonctionnait pas. Il a fallu sonder la pin +3.3 V du connecteur est la branché à la STM32.
+- Communication UART du GNSS qui ne fonctionne pas, le flag "GPS = 1" qui est dans le Makefile est utilisé pour pouvoir utilisé le capteur GPS, mais il y a une sur définition de fonction UART dans le fichier uart.c et donc le module GNSS ne pouvait fonctionner. Donc, nous avons utilisé une donnée de GPS pour le test qui a été fixé dans le codec Chirpstack.
+- Problème de broker MQTT : nodered_1  	| 16 Jan 09:58:58 - [info] [mqtt-broker:LNS] Connection failed to broker: mqtts://lns.campusiot.imag.fr:8883
 
 # Conclusion
