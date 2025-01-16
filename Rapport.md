@@ -1,7 +1,7 @@
 # Introduction
 Ce mini-projet a pour objectif de parcourir les différentes étapes du processus IoT, allant de l’acquisition des données des capteurs à leur transmission et analyse dans le cloud. À partir des travaux pratiques déjà réalisés, nous allons améliorer les codes existants en utilisant SAUL pour la collecte des mesures des capteurs. Nous utiliserons un capteur intégré ST LPS22HB pour mesurer la température et la pression atmosphérique, ainsi qu’un module de position Grove SIM28 pour obtenir la longitude, la latitude et l’altitude.
 
-Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées.
+Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT sous forme de payload. Ces données seront ensuite récupérées à l’aide de NodeRed par MQTT, et décodées, puis stockées dans un jeu de données avec InfluDB. Enfin, nous utiliserons Grafana pour la visualisation des informations collectées.
 
 # Domaine(s) d’utilisation
 Ce projet joue un rôle clé dans la **recherche atmosphérique et environnementale**. Par exemple, grâce à des équipements embarqués sur des ballons atmosphériques, il est possible de mesurer en temps réel des paramètres tels que la température et la pression atmosphérique. Ces données sont essentielles pour étudier la structure de l’atmosphère, les conditions météorologiques et les changements climatiques. Elles peuvent également être utilisées pour valider des modèles climatiques et améliorer la précision des prévisions météorologiques. En outre, le système peut être associé à des capteurs de polluants pour surveiller la qualité de l’air et identifier la distribution des polluants à différentes altitudes, contribuant ainsi à l’élaboration de politiques de protection de l’environnement.
@@ -19,6 +19,8 @@ Des entreprises comme qui SENSIT propose des solutions IoT pour la collecte de d
 Et Bosch sont également des acteurs majeurs dans le domaine des capteurs IoT, avec une gamme d’appareils utilisés pour surveiller les conditions environnementales, y compris dans des applications liées à la météorologie.
 
 # Equipements
+Pour les équiepement du projet, nous allons utilié une carte STM32 F446RE, la carte LoRaWAN Sensor Unit Kit (STM32L151) avec un capteur de temperature et de pression integré (ST LPS22HB), et le module GPS UART Grove SIM28.
+
 ![Cartes](images/equipement.jpg)
 
 # Bilan énergétique
