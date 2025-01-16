@@ -64,3 +64,4 @@ Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
 Taille du firmware (.bin)
 
 # Travail Réalisé
+![Terminal](images/Terminal.png)
