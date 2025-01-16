@@ -48,3 +48,5 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 # Métriques logicielles
 Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
 Taille du firmware (.bin)
+
+# Travail Réalisé
