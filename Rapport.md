@@ -73,26 +73,30 @@ L'analyse des contributions montre que le module GPS domine largement la consomm
 - **Module LoRaWAN** : 0.03%  
 
 # Format de données (payload)
-fPort : 2 to 170
 
+Un format de données (payload) décrit une structure d'information utilisée pour transmettre des données dans un système de communication.
+
+fPort : 2 to 170 
 int16 : altitude
-
-uint8 : datarate (0,1,2,3,4,5)
-
-float64 : gain
-
 float64 : latitude
-
 float64 : longitude
-
-int16 : pressure
-
-int16 : size
-
 int16 : temperature
-
+int16 : pressure
+uint8 : datarate (0,1,2,3,4,5)
+float64 : gain
+int16 : size
 uint8 : txpower en dBm
 
+Voici l'explication détaillée des différents éléments dans le payload :
+
+- fPort est un champ qui représente le numéro de port de la charge utile (payload).
+- altitude, latitude et longitude sont les coordonnées GPS mesurées en degré et en métres.
+- temperature et pressure sont les données du capteur.
+- datarate représente le taux de transmission des données. Les valeurs spécifiées (0,1,2,3,4,5) indiquent des niveaux spécifiques de la vitesse de transmission.
+- gain représente le facteur d'amplification du signal.
+- size représente la taille en octet de l'objet du payload.
+- txpower représente la puissance de transmission du signal.
+  
 # Métriques logicielles
 Nombre total de lignes de code / Nombre de lignes de code ajoutées-modifiées
 Taille du firmware (.bin)
