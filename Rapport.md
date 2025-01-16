@@ -196,12 +196,12 @@ while (1) {
   <p><em>Figure 11: Node-RED 4</em></p>
 </div>
 
-![Figure 12: Grafana 1](images/grafana1.png)
-![Figure 12: Grafana 2](images/grafana2.png)
-<p align="center"><em>Figure 12: Grafana </em></p>
+![Figure 12: InfluxDB](images/influxdb.png)
+<p align="center"><em>Figure 12: InfluxDB</em></p>
 
-![Figure 13: InfluxDB](images/influxdb.png)
-<p align="center"><em>Figure 13: InfluxDB</em></p>
+![Figure 13: Grafana 1](images/grafana1.png)
+![Figure 13: Grafana 2](images/grafana2.png)
+<p align="center"><em>Figure 13: Grafana </em></p>
 
 ## Problemes rencontrés
 
