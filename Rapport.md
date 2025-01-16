@@ -52,10 +52,10 @@ Le système étudié transmet des données toutes les 2 minutes. Le bilan énerg
 
 ## 1. Module LoRaWAN
 Le module LoRaWAN est responsable de la communication sans fil, utilisant la bande de fréquence de 868 MHz. Son fonctionnement est caractérisé par deux modes :  
-- **Mode actif** : pendant 1 seconde par cycle de 2 minutes, le module consomme **214 μA/MHz**, soit une consommation énergétique totale de **214 μAs** avec un frequence de communication LoraWan de 868 MHz.  
+- **Mode actif** : pendant 1 seconde par cycle de 2 minutes, le module consomme **214 μA/MHz**, soit une consommation énergétique totale de **185.75 mAs** avec un frequence de communication LoraWan de 868 MHz.  
 - **Mode veille** : durant les 119 secondes restantes, la consommation chute à **0.9 μA**, correspondant à **107.1 μAs**.  
 
-Consommation totale pour le module LoRaWAN : **321.1 μAs** par cycle de 2 minutes.  
+Consommation totale pour le module LoRaWAN : **185.85 mAs** par cycle de 2 minutes.  
 
 ## 2. Microcontrôleur STM32
 Le microcontrôleur STM32, responsable de la gestion des opérations et de la coordination des modules, fonctionne de manière continue pendant le cycle de 2 minutes. Sa consommation est stable à **60 μA**, ce qui correspond à une consommation énergétique totale de **7200 μAs**.  
@@ -64,13 +64,13 @@ Le microcontrôleur STM32, responsable de la gestion des opérations et de la co
 Le module GPS, utilisé pour obtenir les coordonnées de localisation, est actif pendant 30 secondes par cycle. Il consomme **40 mA**, soit une énergie totale de **1200 mAs**.  
 
 ## 4. Consommation Totale du Système
-En additionnant les contributions des trois modules, la consommation énergétique totale du système par cycle de 2 minutes s'élève à **1.208 As**. Avec une alimentation de **3.3V**, cela correspond à une puissance moyenne de **33.22 mW**.  
+En additionnant les contributions des trois modules, la consommation énergétique totale du système par cycle de 2 minutes s'élève à **1.393 As**. Avec une alimentation de **3.3V**, cela correspond à une puissance moyenne de **38.36 mW**.  
 
 ## 5. Répartition de la Consommation Énergétique
-L'analyse des contributions montre que le module GPS domine largement la consommation énergétique du système, représentant plus de **99%** de l'énergie totale consommée. Les autres composants, bien que nécessaires, contribuent de manière négligeable :  
-- **Module GPS** : 99.34%  
-- **Microcontrôleur STM32** : 0.60%  
-- **Module LoRaWAN** : 0.03%  
+L'analyse des contributions montre que le module GPS domine largement la consommation énergétique du système, représentant plus de **86.14%** de l'énergie totale consommée. Les autres composants, bien que nécessaires, contribuent de manière négligeable :  
+- **Module GPS** : 86.14%  
+- **Microcontrôleur STM32** : 0.52%  
+- **Module LoRaWAN** : 13.34%  
 
 # Format de données (payload)
 
