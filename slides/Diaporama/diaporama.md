@@ -2,9 +2,11 @@ class: center, middle
 
 # Projet : IoT Field Test Device-GNSS
 IESE 5 Communication IOT
-CHEVALLIER Bastien
-LU Jiajin
-WANG Qi
+
+- CHEVALLIER Bastien
+- LU Jiajin
+- WANG Qi
+  
 <br>
 <br>
 .center[
@@ -13,88 +15,56 @@ WANG Qi
 
 ---
 
-## What is RIOT?
+# Sommaire
 
-- An **operating system** for microcontroller-based IoT devices
-
- - **microkernel architecture** &#x21d2; require very low resources
- - **real-time** and **multi-threaded**
- - comes with **in-house networking stacks**
-
-<br>
-
-- An **open-source platform & ecosystem**: <a href="https://github.com/RIOT-OS/RIOT">https://github.com/RIOT-OS/RIOT</a>
-
- - free software platform
- - **easy to use** and __reuse__
- - Standard programming in C, standard tooling
- - **API is independent** from the hardware
-
-<br>
-
-- A **world-wide community** of developers
-
- - lively exchanges on <a href="https://forum.riot-os.org/">Forum</a>, <a href="https://github.com/RIOT-OS/RIOT">GitHub</a> etc.
- - contributions from hundreds of developers from industry, academia, and makers
-<br><br>
+1. [Introduction et objectif](#introduction-et-objectif)
+2. [Contenu du projet](#contenu-du-projet)
+3. [Les équipements](#les-équipements)
+4. [Format de données](#format-de-données)
+5. [Bilan énergétique](#bilan-énergétique)
+6. [Travail Réalisé - Chirpstack](#travail-réalisé---chirpstack)
+7. [Travail Réalisé - NodeRed et InfluxDB](#travail-réalisé---nodered-et-influxdb)
+8. [Travail Réalisé - Visualisation de Grafana](#travail-réalisé---visualisation-de-grafana)
 
 ---
 
-## RIOT in the IoT realm
-
-.center[<img src="images/iot-overview.svg" alt="" style="width:820px;"/>
-<br/><br/>
-&#x21d2; **RIOT is designed for low-end devices**
-]
+# Introduction et objectif
+Expliquez ici l'objectif et le contexte de votre projet.
 
 ---
 
-## History of RIOT
-
-- 2013: Inria, FU Berlin and HAW co-founded RIOT
-
- - stemmed from a French-German research project
- - kernel evolved from FireKernel
-
---
-
-- The community today:
-
-  - So far, **~300** different contributors to the master branch
-  - Academics: Berkeley, UCLA, MIT, AIT, TZI, etc
-  - Industrial: Continental, Cisco, Samsung, ImgTec, Fujitsu, Thalès
-  - SME: Zolertia, OTAKeys, Mesotic, Eistec, We-sens
-  - Member of the EdgeXFoundry initiative
-
---
-
-- Annual symposium: the RIOT Summit <a href="https://summit.riot-os.org">https://summit.riot-os.org</a>
-
-.center[
-<img src="images/riot-summit.png" alt="" style="width:220px;"/>&nbsp;
-<img src="images/summit-2018.jpg" alt="" style="width:220px;"/>
-]
+# Contenu du projet
+Détaillez le contenu du projet, les objectifs et les grandes lignes.
 
 ---
 
-## Competitors
+# Les équipements
+Listez et décrivez les équipements utilisés dans le projet.
 
-.center[
-    <img src="images/os-timeline.png" alt="" style="width:600px;"/>
-]
-<div style="position: absolute;right: 100px;">
-<span style="font-style: italic;font-size:12px;text-align:right">
-Reference: O. Hahm et al. "Operating Systems for Low-End Devices<br>
-in the Internet of Things: A survey," IEEE Internet of ThingsJournal, 2016.
-</span>
-</div>
-<br>
-<br>
+---
 
- - requires less memory & adapts to a wider range of architectures
+# Format de données
+Expliquez le format des données et leur structuration.
 
- - fosters an open-source philosophy more akin to Linux
+---
 
- - provides more integrated high-level functionalities
+# Bilan énergétique
+Présentez les résultats du bilan énergétique, en insistant sur les points clés.
 
+---
 
+# Travail Réalisé - Chirpstack
+Détaillez le travail réalisé avec Chirpstack, incluant les étapes et les résultats.
+
+---
+
+# Travail Réalisé - NodeRed et InfluxDB
+Expliquez le processus de configuration et d'utilisation de NodeRed et InfluxDB.
+
+---
+
+# Travail Réalisé - Visualisation de Grafana
+Présentez la configuration et les tableaux de bord créés avec Grafana.
+
+# Conclusion
+Présentez la configuration et les tableaux de bord créés avec Grafana.
