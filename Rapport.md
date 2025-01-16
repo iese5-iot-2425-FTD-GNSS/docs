@@ -173,3 +173,6 @@ while (1) {
 ![Grafana 2](images/grafana2.png)
 ## Problemes rencontrés
 
+# Conclusion
+
+
