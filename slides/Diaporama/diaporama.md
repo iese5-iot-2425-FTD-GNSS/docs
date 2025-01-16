@@ -1,7 +1,10 @@
 class: center, middle
 
-# Introduction
-test image
+# Projet : IoT Field Test Device-GNSS
+IESE 5 Communication IOT
+CHEVALLIER Bastien
+LU Jiajin
+WANG Qi
 <br>
 <br>
 .center[
