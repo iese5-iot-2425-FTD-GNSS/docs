@@ -160,7 +160,9 @@ while (1) {
 - La Taille du firmware (.bin) est de 2,87 MB (3 014 782 bytes).
 
 # Travail Réalisé
-![Figure 3: Terminal](images/Terminal.png)
+<p align="center">
+  ![Figure 3: Terminal](images/Terminal.png)
+</p>
 <p align="center"><em>Figure 3: Copie écran du Terminal</em></p>
 
 ![Figure 4: ChirpStack 1](images/chirpstack1.png)
@@ -188,13 +190,11 @@ while (1) {
 <p align="center"><em>Figure 11: Node-RED 4</em></p>
 
 ![Figure 12: Grafana 1](images/grafana1.png)
-<p align="center"><em>Figure 12: Grafana 1</em></p>
+![Figure 12: Grafana 2](images/grafana2.png)
+<p align="center"><em>Figure 12: Grafana </em></p>
 
-![Figure 13: Grafana 2](images/grafana2.png)
-<p align="center"><em>Figure 13: Grafana 2</em></p>
-
-![Figure 14: InfluxDB](images/influxdb.png)
-<p align="center"><em>Figure 14: InfluxDB</em></p>
+![Figure 13: InfluxDB](images/influxdb.png)
+<p align="center"><em>Figure 13: InfluxDB</em></p>
 
 ## Problemes rencontrés
 
