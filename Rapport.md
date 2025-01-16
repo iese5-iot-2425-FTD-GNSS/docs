@@ -182,44 +182,59 @@ Ensuite, nous avons créé un nouvel équipement depuis l'application (et géné
 Après, dans la trame Lorawan, on peut voir que l'on reçoit des données (Figure 5).
 
 ![Figure 5: ChirpStack 4](images/chirpstack4.png)
-<p align="center"><em>Figure 5: ChirpStack 4</em></p>
+<p align="center"><em>Figure 5: Frame de ChirpStack</em></p>
 
 Ensuite, dans le device data, on peut voir les données reçues par le serveur (Figure 6).
 
 ![Figure 6: ChirpStack 2](images/chirpstack2.png)
 <p align="center"><em>Figure 6: Device Data deChirpStack </em></p>
 
-Si on clique dans une trame uplink, on peut visualiser toutes les informations LoRa mais aussi l'objectJSON qui est la partie où est stocké le payload avec en exemple la température qui est ici de 23 degrés au moment de la capture du capteur et de l'envoi en LoRa (Figure 7).
+Si on clique dans une trame uplink, on peut visualiser toutes les informations LoRa, mais aussi l'objectJSON qui est la partie où est stocké le payload avec en exemple la température qui est ici de 23 degrés au moment de la capture du capteur et de l'envoi en LoRa (Figure 7).
 
 <div align="center">
   <img src="images/chirpstack3.png" alt="Figure 7: ChirpStack 3">
-  <p><em>Figure 7: ChirpStack 3</em></p>
+  <p><em>Figure 7: ObjectJSON de ChirpStack</em></p>
 </div>
 
+Pour la partie serveur avec LoRa, c'est finit, maintenant, c'est la partie où l'on va utiliser docker pour faire 3 conteneurs, un pour NodeRED, un pour InfluxDB et un pour Grafana. C'est avec, c'est ligne là que l'on utilise docker : 
+
+```shell
 docker-compose up -d
 docker-compose ps
 docker-compose logs -f
 docker-compose restart 	si fonctionne pas
-
+```
+Dans Chirpstack ou dans NodeRED, on peut utiliser un codec qui va récupérer le payload crue et le transformer en donnée utilisable.
+Pour ce mini-projet, le codec est dans Chirpstack, mais nous pouvions le mettre dans NodeREd (Figure 8). On peut voir que l'application 464 (la nôtre) est connecté et qu'on peut donc récupérer les données dans le débug et les visualiser.
 
 ![Figure 8: Node-RED 1](images/nodered1.png)
-<p align="center"><em>Figure 8: Node-RED 1</em></p>
+<p align="center"><em>Figure 8: Node-RED Save Data</em></p>
+
+Pour la figure 9, c'est pour la création de la base de données "lorawan" sur NodeRED.
 
 ![Figure 9: Node-RED 2](images/nodered2.png)
-<p align="center"><em>Figure 9: Node-RED 2</em></p>
+<p align="center"><em>Figure 9: Node-RED DB</em></p>
+
+Ensuite, figure 10, c'est le débogage avec toute les trame uplink reçu depuis que l'application est lancée.
 
 <div align="center">
   <img src="images/nodered3.png" alt="Figure 10: Node-RED 3">
-  <p><em>Figure 10: Node-RED 3</em></p>
+  <p><em>Figure 10: Trame Node-RED</em></p>
 </div>
+
+Ensuite, nous zoomons sur une trame, on peut voir l'objet avec le contenu que le codec de Chirpstack a décodé et les valeurs lisibles envoyé par la carte STM32 (Figure 11).
 
 <div align="center">
   <img src="images/nodered4.png" alt="Figure 11: Node-RED 4">
-  <p><em>Figure 11: Node-RED 4</em></p>
+  <p><em>Figure 11: Contenu trame Node-RED 4</em></p>
 </div>
+
+La base de données locale "lorawan" créer dans NoteRED peut être afficher avec des commandes SQL avec les données des capteur et les données radio par exemple. De plus, le dataset complet peut être extrait, il se situe dans le dépôt "dataset" et les fichiers pour le backend avec NoteRED, InfluxDB et Grafana dans "backend" (Figure 12).
 
 ![Figure 12: InfluxDB](images/influxdb.png)
 <p align="center"><em>Figure 12: InfluxDB</em></p>
+
+Pour finir, les données sont visualisées sur Grafana qui utilise les données de InfluxDB. On a les coordonnées GPS qui pointent à Polytech, les valeurs de température et de pression avec des graphiques qui montrent les évolutions dans le temps. Et aussi, d'autre mesure liés a l'antenne.
 
 ![Figure 13: Grafana 1](images/grafana1.png)
 ![Figure 13: Grafana 2](images/grafana2.png)
