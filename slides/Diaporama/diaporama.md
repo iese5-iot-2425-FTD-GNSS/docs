@@ -1,19 +1,21 @@
 class: center, middle
 
-# Projet : IoT Field Test Device-GNSS
-IESE 5 Communication IOT
+# Projet : IoT Field Test Device-GNSS  
+IESE 5 Communication IoT  
 
-- CHEVALLIER Bastien
-- LU Jiajin
-- WANG Qi
-  
+<br>
+
+**CHEVALLIER Bastien**  
+**LU Jiajin**  
+**WANG Qi**  
+
 <br>
 <br>
 .center[
-<img src="images/polytech.png" alt="" style="width:220px;"/>
+<img src="images/polytech.png" alt="Logo Polytech" style="width:220px;"/>
 ]
-
 ---
+
 
 # Sommaire
 
@@ -25,12 +27,30 @@ IESE 5 Communication IOT
 6. [Travail Réalisé - Chirpstack](#travail-réalisé---chirpstack)
 7. [Travail Réalisé - NodeRed et InfluxDB](#travail-réalisé---nodered-et-influxdb)
 8. [Travail Réalisé - Visualisation de Grafana](#travail-réalisé---visualisation-de-grafana)
+9. [Conclusion](#conclusion)
 
 ---
+## Introduction et objectif
 
-# Introduction et objectif
-Expliquez ici l'objectif et le contexte de votre projet.
+- **Mesure :**
+  - Température
+  - Pression atmosphérique
+  - Position géographique
+- **Récupération et affichage des données** avec la base de données Docker
 
+### Domaine d’utilisation
+- Recherche environnementale, modélisation climatique et surveillance de la pollution.
+- Détection des phénomènes météorologiques extrêmes et amélioration de la surveillance dans les zones isolées.
+
+### Logos des technologies utilisées :
+<center>
+<img src="images/linux.png" alt="Linux" width="70">
+<img src="images/riot.png" alt="RIOT" width="70">
+<img src="images/chirpstack.png" alt="ChirpStack" width="100">
+<img src="images/node-red.png" alt="Node-RED" width="90">
+<img src="images/grafana.png" alt="Grafana" width="80">
+<img src="images/influxdb.png" alt="InfluxDB" width="100">
+</center>
 ---
 
 # Contenu du projet
@@ -66,5 +86,17 @@ Expliquez le processus de configuration et d'utilisation de NodeRed et InfluxDB.
 # Travail Réalisé - Visualisation de Grafana
 Présentez la configuration et les tableaux de bord créés avec Grafana.
 
+---
+
 # Conclusion
 Présentez la configuration et les tableaux de bord créés avec Grafana.
+
+---
+
+class: center, middle
+
+# Merci pour votre attention !  
+
+.center[
+<img src="images/polytech.png" alt="Logo Polytech" style="width:220px;"/>
+]
