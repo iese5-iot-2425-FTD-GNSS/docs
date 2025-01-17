@@ -68,7 +68,7 @@ En additionnant les contributions des trois modules, la consommation énergétiq
 Une batterie de 2Ah peut alimenter donc l'appareil pendant environ 522 heures, soit environ 21,8 jours
 
 ## 5. Répartition de la Consommation Énergétique
-L'analyse des contributions montre que le module LoRa domine largement la consommation énergétique du système, représentant plus de **81%** de l'énergie totale consommée. Les autres composants, bien que nécessaires, contribuent de manière négligeable :  
+L'analyse des contributions montre que le module LoRa domine largement la consommation énergétique du système, représentant **81%** de l'énergie totale consommée. Les autres composants, bien que nécessaires, contribuent de manière négligeable :  
 - **Module GPS** : 81%  
 - **Microcontrôleur STM32** : 1.57%  
 - **Module LoRaWAN** : 17.43%  
