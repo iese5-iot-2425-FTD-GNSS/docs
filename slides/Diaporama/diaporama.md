@@ -80,7 +80,7 @@ IESE 5 Communication IoT
 
 <center>
 <img src="images/schema.png" alt="Schema" width="600">
-<img src="images/carte.jpg" alt="Carte" width="500">
+<img src="images/carte.jpg" alt="Carte" width="400">
 </center>
 
 ---
@@ -155,8 +155,9 @@ IESE 5 Communication IoT
 # Travail Réalisé - NodeRed
 
 <center>
-<img src="images/nodered1.png" alt="Nodered1" width="600">
-<img src="images/nodered2.png" alt="Nodered2" width="600">
+<img src="images/nodered1.png" alt="Nodered1" width="700">
+<br>
+<img src="images/nodered2.png" alt="Nodered2" width="700">
 </center>
 
 ---
