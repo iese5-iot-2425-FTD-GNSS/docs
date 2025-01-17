@@ -37,6 +37,8 @@ IESE 5 Communication IoT
   - Position géographique
 - **Récupération et affichage des données** avec la base de données Docker
 
+<br>
+
 ### Domaine d’utilisation
 - Recherche environnementale, modélisation climatique et surveillance de la pollution.
 - Détection des phénomènes météorologiques extrêmes et amélioration de la surveillance dans les zones isolées.
@@ -77,8 +79,8 @@ IESE 5 Communication IoT
 # Les équipements
 
 <center>
-<img src="images/schema.png" alt="Schema" width="400">
-<img src="images/carte.jpg" alt="Carte" width="400">
+<img src="images/schema.png" alt="Schema" width="600">
+<img src="images/carte.jpg" alt="Carte" width="500">
 </center>
 
 ---
@@ -86,7 +88,7 @@ IESE 5 Communication IoT
 # Format de données
 
 <center>
-<img src="images/payload.png" alt="Payload" width="400">
+<img src="images/payload.png" alt="Payload" width="500">
 </center>
 
 ---
@@ -94,7 +96,7 @@ IESE 5 Communication IoT
 # Bilan énergétique
 
 <center>
-<img src="images/bilan.png" alt="Bilan" width="400">
+<img src="images/bilan.png" alt="Bilan" width="700">
 </center>
 
 ---
@@ -103,8 +105,10 @@ IESE 5 Communication IoT
 
 - Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT (Chirpstack)
 
+<br>
+
 <center>
-<img src="images/Terminal.png" alt="Terminal" width="400">
+<img src="images/Terminal.png" alt="Terminal" width="500">
 </center>
 
 ---
@@ -112,7 +116,7 @@ IESE 5 Communication IoT
 # Travail Réalisé - Chirpstack
 
 <center>
-<img src="images/chirpstack1.png" alt="Chirpstack1" width="400">
+<img src="images/chirpstack1.png" alt="Chirpstack1" width="800">
 </center>
 
 ---
@@ -120,7 +124,7 @@ IESE 5 Communication IoT
 # Travail Réalisé - Chirpstack
 
 <center>
-<img src="images/chirpstack4.png" alt="Chirpstack4" width="400">
+<img src="images/chirpstack4.png" alt="Chirpstack4" width="800">
 </center>
 
 ---
@@ -128,7 +132,7 @@ IESE 5 Communication IoT
 # Travail Réalisé - Chirpstack
 
 <center>
-<img src="images/chirpstack2.png" alt="Chirpstack2" width="400">
+<img src="images/chirpstack2.png" alt="Chirpstack2" width="800">
 </center>
 
 ---
@@ -151,8 +155,8 @@ IESE 5 Communication IoT
 # Travail Réalisé - NodeRed
 
 <center>
-<img src="images/nodered1.png" alt="Nodered1" width="400">
-<img src="images/nodered2.png" alt="Nodered2" width="100">
+<img src="images/nodered1.png" alt="Nodered1" width="600">
+<img src="images/nodered2.png" alt="Nodered2" width="600">
 </center>
 
 ---
@@ -160,8 +164,8 @@ IESE 5 Communication IoT
 # Travail Réalisé - NodeRed
 
 <center>
-<img src="images/nodered3.png" alt="Nodered3" width="400">
-<img src="images/nodered1.png" alt="Nodered4" width="400">
+<img src="images/nodered3.png" alt="Nodered3" width="200">
+<img src="images/nodered1.png" alt="Nodered4" width="600">
 </center>
 
 ---
@@ -169,7 +173,7 @@ IESE 5 Communication IoT
 # Travail Réalisé - InfluxDB
 
 <center>
-<img src="images/influxdb.png" alt="InfluxDB" width="400">
+<img src="images/influxdb.png" alt="InfluxDB" width="800">
 </center>
 
 ---
@@ -177,8 +181,8 @@ IESE 5 Communication IoT
 # Travail Réalisé - Visualisation de Grafana
 
 <center>
-<img src="images/grafana1.png" alt="Grafana1" width="400">
-<img src="images/grafana2.png" alt="Grafana2" width="400">
+<img src="images/grafana1.png" alt="Grafana1" width="800">
+<img src="images/grafana2.png" alt="Grafana2" width="800">
 </center>
 
 ---
@@ -188,7 +192,9 @@ IESE 5 Communication IoT
 - 60 lignes de code ajouté 
 - Technologies IoT de bout en bout avec le serveur LoRaWAN open-source ChirpStack
 - Les conteneurs docker pour le backend avec NodeRED, InfluxDB et Grafana
-- Applicaiton FTD GNSS
+- Applicaiton FTD
+
+<br>
   
 <center>
 <img src="images/linux.jpg" alt="Linux" width="100">
