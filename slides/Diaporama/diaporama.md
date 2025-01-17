@@ -16,7 +16,6 @@ IESE 5 Communication IoT
 ]
 ---
 
-
 # Sommaire
 
 1. [Introduction et objectif](#introduction-et-objectif)
@@ -44,52 +43,148 @@ IESE 5 Communication IoT
 
 ### Logos des technologies utilisées :
 <center>
-<img src="images/linux.jpg" alt="Linux" width="70">
-<img src="images/riot.png" alt="RIOT" width="70">
+<img src="images/linux.jpg" alt="Linux" width="100">
+<img src="images/riot.png" alt="RIOT" width="100">
 <img src="images/chirpstack.png" alt="ChirpStack" width="100">
-<img src="images/nodered.png" alt="Node-RED" width="90">
-<img src="images/grafana-logo.png" alt="Grafana" width="80">
+<img src="images/nodered.png" alt="Node-RED" width="100">
+<img src="images/grafana-logo.png" alt="Grafana" width="100">
 <img src="images/influxdb-logo.png" alt="InfluxDB" width="100">
 </center>
 ---
 
 # Contenu du projet
-Détaillez le contenu du projet, les objectifs et les grandes lignes.
+
+- le capteur ST LPS22HB
+- le module de position Grove SIM28
+- mesurer plusieurs paramètres (température, pression et position géographique)
+- protocoles MQTT, NodeRED, InfluxDB, Grafana
+
+<center>
+<img src="images/linux.jpg" alt="Linux" width="100">
+<img src="images/riot.png" alt="RIOT" width="100">
+<img src="images/chirpstack.png" alt="ChirpStack" width="100">
+<img src="images/nodered.png" alt="Node-RED" width="100">
+<img src="images/grafana-logo.png" alt="Grafana" width="100">
+<img src="images/influxdb-logo.png" alt="InfluxDB" width="100">
+</center>
 
 ---
 
 # Les équipements
-Listez et décrivez les équipements utilisés dans le projet.
+
+<center>
+<img src="images/schema.png" alt="Schema" width="100">
+<img src="images/carte.jpg" alt="Carte" width="100">
+</center>
 
 ---
 
 # Format de données
-Expliquez le format des données et leur structuration.
+
+<center>
+<img src="images/payload.png" alt="Payload" width="100">
+</center>
 
 ---
 
 # Bilan énergétique
-Présentez les résultats du bilan énergétique, en insistant sur les points clés.
+
+<center>
+<img src="images/bilan.png" alt="Bilan" width="100">
+</center>
+
+---
+
+# Travail Réalisé
+
+- Les données générées par les capteurs seront envoyées via le module LoRa de la carte vers le serveur Campus IoT (Chirpstack)
+
+<center>
+<img src="images/terminal.png" alt="Terminal" width="100">
+</center>
 
 ---
 
 # Travail Réalisé - Chirpstack
-Détaillez le travail réalisé avec Chirpstack, incluant les étapes et les résultats.
+
+<center>
+<img src="images/chirpstack1.png" alt="Chirpstack1" width="100">
+</center>
 
 ---
 
-# Travail Réalisé - NodeRed et InfluxDB
-Expliquez le processus de configuration et d'utilisation de NodeRed et InfluxDB.
+# Travail Réalisé - Chirpstack
+
+<center>
+<img src="images/chirpstack4.png" alt="Chirpstack4" width="100">
+</center>
+
+---
+
+# Travail Réalisé - Chirpstack
+
+<center>
+<img src="images/chirpstack2.png" alt="Chirpstack2" width="100">
+</center>
+
+---
+
+# Travail Réalisé - Chirpstack
+
+<center>
+<img src="images/chirpstack3.png" alt="Chirpstack3" width="100">
+</center>
+
+---
+
+# Travail Réalisé
+
+- NodeRed pour récupérer les données via IOT Campus et les décodées
+- InfluxDB pour stocker les données
+
+---
+
+# Travail Réalisé - NodeRed
+
+<center>
+<img src="images/nodered1.png" alt="Nodered1" width="100">
+<img src="images/nodered2.png" alt="Nodered2" width="100">
+</center>
+
+---
+
+# Travail Réalisé - NodeRed
+
+<center>
+<img src="images/nodered3.png" alt="Nodered3" width="100">
+<img src="images/nodered1.png" alt="Nodered4" width="100">
+</center>
+
+---
+
+# Travail Réalisé - InfluxDB
+
+<center>
+<img src="images/influxdb.png" alt="InfluxDB" width="100">
+</center>
 
 ---
 
 # Travail Réalisé - Visualisation de Grafana
-Présentez la configuration et les tableaux de bord créés avec Grafana.
+
+<center>
+<img src="images/grafana1.png" alt="Grafana1" width="100">
+<img src="images/grafana2.png" alt="Grafana2" width="100">
+</center>
 
 ---
 
 # Conclusion
-Présentez la configuration et les tableaux de bord créés avec Grafana.
+
+- 60 lignes de code ajouté 
+- Technologies IoT de bout en bout avec le serveur LoRaWAN open-source ChirpStack
+- Les conteneurs docker pour le backend avec NodeRED, InfluxDB et Grafana
+- Applicaiton FTD GNSS 
 
 ---
 
