@@ -184,7 +184,16 @@ IESE 5 Communication IoT
 - 60 lignes de code ajouté 
 - Technologies IoT de bout en bout avec le serveur LoRaWAN open-source ChirpStack
 - Les conteneurs docker pour le backend avec NodeRED, InfluxDB et Grafana
-- Applicaiton FTD GNSS 
+- Applicaiton FTD GNSS
+  
+<center>
+<img src="images/linux.jpg" alt="Linux" width="100">
+<img src="images/riot.png" alt="RIOT" width="100">
+<img src="images/chirpstack.png" alt="ChirpStack" width="100">
+<img src="images/nodered.png" alt="Node-RED" width="100">
+<img src="images/grafana-logo.png" alt="Grafana" width="100">
+<img src="images/influxdb-logo.png" alt="InfluxDB" width="100">
+</center>
 
 ---
 
