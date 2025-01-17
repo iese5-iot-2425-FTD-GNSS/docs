@@ -65,6 +65,7 @@ Le module GPS, utilisé pour obtenir les coordonnées de localisation, est actif
 
 ## 4. Consommation Totale du Système
 En additionnant les contributions des trois modules, la consommation énergétique totale du système par cycle de 1 minutes s'élève à **229.4 As**. Avec une alimentation de **3.3V**, cela correspond à une puissance moyenne de **12.61 mW**.  
+Une batterie de 2Ah peut alimenter donc l'appareil pendant environ 522 heures, soit environ 21,8 jours
 
 ## 5. Répartition de la Consommation Énergétique
 L'analyse des contributions montre que le module LoRa domine largement la consommation énergétique du système, représentant plus de **81%** de l'énergie totale consommée. Les autres composants, bien que nécessaires, contribuent de manière négligeable :  
