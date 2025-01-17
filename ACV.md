@@ -19,28 +19,28 @@ L’objectif est d’assurer un suivi précis des équipements dans divers envir
 
 ## 3. Impact environnemental global
 
-La carte envoie les données toutes les 2 minutes. Les principales sources de consommation d'énergie du système sont les suivantes :
+La carte envoie les données toutes les minutes. Les principales sources de consommation d'énergie du système sont les suivantes :
 
 ### Module LoRaWAN
 - **Mode de fonctionnement** : 214 μA/MHz à 868 MHz pendant 1 seconde.  
-- **Mode veille** : 0.9 μA pendant 119 secondes.  
+- **Mode veille** : 0.9 μA pendant 59 secondes.  
 - **Consommation totale pour LoRaWAN** : **321.1 μAs**.
 
 ### Microcontrôleur STM32
-- **Consommation** : 60 μA pendant 120 secondes.  
-- **Consommation totale pour STM32** : **7200 μAs**.
+- **Consommation** : 60 μA pendant 60 secondes.  
+- **Consommation totale pour STM32** : **3600 μAs**.
 
 ### Module GPS
-- **Consommation** : 40 mA pendant 30 secondes.  
-- **Consommation totale pour le GPS** : **1200000 μAs**.
+- **Consommation** : 40 mA pendant 1 secondes.  
+- **Consommation totale pour le GPS** : **40 mAs**.
 
 ### Consommation totale du système
-- **Consommation totale** : **1.208 As** par cycle.  
-- **Consommation moyenne** : **33.22 mW** avec une alimentation de **3.3V**.  
+- **Consommation totale** : **229.4 mAs** par cycle.  
+- **Consommation moyenne** : **12.61 mW** avec une alimentation de **3.3V**.  
 - **Répartition énergétique** :  
-  - **Module GPS** : 99.34%.  
-  - **Microcontrôleur STM32** : 0.60%.  
-  - **Module LoRaWAN** : 0.03%.
+  - **Module GPS** : 81%.  
+  - **Microcontrôleur STM32** : 1.57%.  
+  - **Module LoRaWAN** : 17.43%.
 
 ## 4. Recommandations prioritaires
 
